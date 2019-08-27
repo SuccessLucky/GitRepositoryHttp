@@ -1,0 +1,6 @@
+rootProject.name = 'GrovvyDemo'
+include 'Gradle_seed'
+include 'Gradle_service'
+include 'Gradle_web'
+include 'Gradle_Dao'
+

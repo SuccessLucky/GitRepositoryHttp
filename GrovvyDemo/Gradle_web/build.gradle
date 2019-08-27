@@ -1,0 +1,2 @@
+//识别webapp目录
+apply plugin:"war"

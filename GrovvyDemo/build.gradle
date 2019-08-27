@@ -1,0 +1,57 @@
+//让所有子工程都能使用父工程中的依赖
+allprojects {
+
+    group 'com.sanciyuan'
+    version '1.0-SNAPSHOT'
+
+    apply plugin: "war"
+
+    sourceCompatibility = 1.8
+
+/**
+ * 指定所使用的仓库,MavenCentral()表示使用中央仓库,此刻项目中所需要的jar包都会默认从中央创库下载
+ */
+    repositories {
+
+    }
+//
+//buildscript {
+//    repositories {
+//        maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+//    }
+//}
+    repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    }
+
+/**
+ * gradle的依赖架包都放在dependencies下
+ * 每个jar都有三个基本元素组成
+ * group,name,version
+ * testCompile表示该jar包在测试的时候起作用，该属性为jar包的作用域
+ */
+    dependencies {
+        testCompile group: 'junit', name: 'junit', version: '4.12'
+
+        //spring的核心依赖
+        // https://mvnrepository.com/artifact/org.springframework/spring-context
+        compile group: 'org.springframework', name: 'spring-context', version: '5.0.2.RELEASE'
+
+        //spring-web依赖
+        // https://mvnrepository.com/artifact/org.springframework/spring-web
+        compile group: 'org.springframework', name: 'spring-web', version: '5.0.2.RELEASE'
+
+        //spring-webmvc
+        // https://mvnrepository.com/artifact/org.springframework/spring-webmvc
+        compile group: 'org.springframework', name: 'spring-webmvc', version: '5.0.2.RELEASE'
+
+        //servlet
+        // https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api
+        providedCompile group: 'javax.servlet', name: 'javax.servlet-api', version: '3.0.1'
+
+        //JSP
+        // https://mvnrepository.com/artifact/javax.servlet/jsp-api
+        providedCompile group: 'javax.servlet', name: 'jsp-api', version: '2.0'
+
+    }
+}

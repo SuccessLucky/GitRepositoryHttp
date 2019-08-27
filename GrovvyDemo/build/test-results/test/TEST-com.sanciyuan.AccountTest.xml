@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sanciyuan.AccountTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-15T07:58:57" hostname="DESKTOP-JFS45UT" time="0.235">
+  <properties/>
+  <testcase name="accountTest" classname="com.sanciyuan.AccountTest" time="0.235"/>
+  <system-out><![CDATA[查询成功!
+]]></system-out>
+  <system-err><![CDATA[八月 15, 2019 3:58:57 下午 org.springframework.context.support.AbstractApplicationContext prepareRefresh
+信息: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7eca9e99: startup date [Thu Aug 15 15:58:57 CST 2019]; root of context hierarchy
+八月 15, 2019 3:58:57 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from class path resource [bean.xml]
+]]></system-err>
+</testsuite>

@@ -1,0 +1,4 @@
+//引用其他同级的子项目
+dependencies {
+    compile project(":Gradle_web")
+}
